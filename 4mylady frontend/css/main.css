@@ -1,0 +1,67 @@
+body {
+    background-color: #343434;
+    display: flex;
+}
+
+.birthday-text {
+    color: white;
+    text-shadow: 1px 1px red;
+    display: inline-flex;
+}
+
+.birthday-number {
+    color: white;
+    text-shadow: 1px 1px red;
+    display: inline-flex;
+}
+
+.form-container {
+    max-width: 500px;
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid red;
+    border-radius: 15px;
+}
+
+.form {
+    border: 2px solid white;
+    background-color: #565656;
+    padding: 40px;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+.form-title {
+    color: white;
+    text-shadow: 1px 1px red;
+    animation: wobble-ani 1s ease 0s infinite;
+}
+
+.form-input {
+    width: 100%;
+    color: white;
+    text-shadow: 1px 1px red;
+    transition: 0.2s ease;
+}
+
+.form-input:focus {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+
+.form-text-input {
+    margin: 15px;
+    resize: none;
+}
+
+@keyframes wobble-ani {
+    0% {transform: rotate(2deg);}
+    50% {transform: rotate(-2deg);}
+    100% {transform: rotate(2deg);}
+}
+
+@media only screen and (max-width: 678px) {
+    .form-title {
+        font-size: 15px;
+    }
+}
